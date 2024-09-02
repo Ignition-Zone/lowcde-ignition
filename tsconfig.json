@@ -19,16 +19,10 @@
     "noFallthroughCasesInSwitch": false,
     "resolveJsonModule": true,
     "paths": {
-      "@comm/comm": [
-        "libs/comm/src"
-      ],
-      "@comm/comm/*": [
-        "libs/comm/src/*"
-      ],
-      "@common/common": [
+      "@libs/common": [
         "libs/common/src"
       ],
-      "@common/common/*": [
+      "@libs/common/*": [
         "libs/common/src/*"
       ]
     }
