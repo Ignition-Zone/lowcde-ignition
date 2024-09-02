@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/lowcde-ignition/src",
+  "monorepo": true,
+  "root": "apps/lowcde-ignition",
+  "compilerOptions": {
+    "webpack": true,
+    "tsConfigPath": "apps/lowcde-ignition/tsconfig.app.json"
+  },
+  "projects": {
+    "lowcde-ignition": {
+      "type": "application",
+      "root": "apps/lowcde-ignition",
+      "entryFile": "main",
+      "sourceRoot": "apps/lowcde-ignition/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/lowcde-ignition/tsconfig.app.json"
+      }
+    },
+    "devops": {
+      "type": "application",
+      "root": "apps/devops",
+      "entryFile": "main",
+      "sourceRoot": "apps/devops/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/devops/tsconfig.app.json"
+      }
+    },
+    "comm": {
+      "type": "library",
+      "root": "libs/comm",
+      "entryFile": "index",
+      "sourceRoot": "libs/comm/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/comm/tsconfig.lib.json"
+      }
+    }
+  }
+}

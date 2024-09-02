@@ -1,0 +1,9 @@
+
+{
+  "name": "lowcde-ignition",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "cd .. && pnpm start:lowcode"
+  }
+}
+
