@@ -2,6 +2,7 @@
 {
   "name": "lowcde-ignition",
   "version": "0.0.1",
+  "description":"lowcde-ignition",
   "scripts": {
     "dev": "cd .. && pnpm start:lowcode"
   }
