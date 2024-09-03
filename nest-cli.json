@@ -3,9 +3,13 @@
   "collection": "@nestjs/schematics",
   "sourceRoot": "apps/lowcde-ignition/src",
   "monorepo": true,
+  "generateOptions": {
+    "spec": false
+  },
   "root": "apps/lowcde-ignition",
   "compilerOptions": {
-    "webpack": true,
+    "deleteOutDir": true,
+    "webpack": false,
     "tsConfigPath": "apps/lowcde-ignition/tsconfig.app.json"
   },
   "projects": {
@@ -43,6 +47,15 @@
       "sourceRoot": "libs/common/src",
       "compilerOptions": {
         "tsConfigPath": "libs/common/tsconfig.lib.json"
+      }
+    },
+    "user": {
+      "type": "application",
+      "root": "apps/user",
+      "entryFile": "main",
+      "sourceRoot": "apps/user/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/user/tsconfig.app.json"
       }
     }
   }

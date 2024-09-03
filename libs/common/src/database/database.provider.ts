@@ -15,7 +15,7 @@ const MYSQL_DATABASE_CONFIG = {
   namingStrategy: new NamingStrategy(),
   entities: [`dist/**/*.${MYSQL_CONFIG.entities}.entity.js`],
 };
-
+console.log('MYSQL_DATABASE_CONFIG:', MYSQL_DATABASE_CONFIG);
 const MONGODB_DATA_SOURCE = new DataSource(MONGODB_DATABASE_CONFIG);
 const MYSQL_DATA_SOURCE = new DataSource(MYSQL_DATABASE_CONFIG);
 

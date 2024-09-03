@@ -8,6 +8,7 @@
   "scripts": {
     "dev": "turbo run dev",
     "start:lowcode": "cross-env RUNNING_ENV=dev nest start --watch",
+    "start:user": "cross-env RUNNING_ENV=dev nest start user --watch",
     "start:devops": "cross-env RUNNING_ENV=dev nest start devops --watch",
     "prebuild": "rimraf dist",
     "build": "nest build",
